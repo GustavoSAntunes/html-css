@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Yusei+Magic&display=swap');
+
+@keyframes pulsate {
+    0%{
+
+    box-shadow:
+    0 0 1px var(--cor2),
+    0 0 10px inset white;
+}
+
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corheader: #9386a4b9;
+    --cor1: #9386A4;
+    --cor2: #dfb15d;
+    --cor3: #D9D4DF;
+    --cor4: #99d8e0a2;
+    --cor5: #DEF0FC;
+    --cor6: #9386A4;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'Yusei Magic', 'cursive';
+    --fonte-destaque: 'Edu AU VIC WA NT Pre', 'cursive';
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--corheader) 60%, rgba(255, 255, 255, 0.856));
+
+    min-height: 100px;
+    max-height: 250px;
+}
+
+
+header h1 {
+    padding-top: 8px;
+    font-size: 3em;
+
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.26);
+
+    text-align: center;
+    font-family: 'Yusei Magic';
+
+    background-image: linear-gradient(to bottom, white, white, var(--cor4));
+
+    background-clip: text; /* limita a visualização do plano de fundo, significa que ele vai apenas exibir o background que esteja embaixo de algum texto. */
+    -webkit-background-clip: text; /* alguns navegadores precisam do prefixo -webkit */
+    -webkit-text-fill-color: transparent; /* */
+}
+
+header p {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 30px;
+    
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.63) 40%, var(--cor2), white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+nav {
+    background-image: linear-gradient(to right, #f8f6fce5, white);
+    padding: 10px;
+
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.212);
+}
+
+nav a{
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+
+    padding: 5px;
+    margin-left: 26px;
+
+    font-size: 1.3em;
+    color: black;
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    color: var(--cor2);
+
+    transition: 0.5s;
+    animation: pulsate 1s ease-in-out;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    
+    font-family: var(--fonte-padrão);
+
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+
+    min-width: 400px;
+    max-width: 1000px;
+}
+
+main h2{
+    margin: 0px 50px;
+    font-family: var(--fonte-destaque);
+
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+
+    line-height: 1.4em;
+    margin: 20px 0px;
+}
+
+main img {
+    display: flex;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+ul {
+    font-family: var(--fonte-padrão);
+
+}
+
+li {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+
+ul ul {
+    margin-top: -10px;
+    padding-inline-start: 40px;
+}
+
+ul li {
+    margin-top: -10px;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+
+    background-color: var(--cor5);
+    border-radius: 10px 10px 0px 0px;
+}

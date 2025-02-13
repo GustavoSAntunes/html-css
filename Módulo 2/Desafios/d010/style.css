@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'DCC';
+    src: url('./fontes/DCC\ -\ The\ alien\ are\ coming.ttf');
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor-cabecalho1: #1b7e46;
+    --cor-cabecalho2: #0d3f23;
+    --cor-fundo: #e8e6c2;
+    --cor-h2: #115e33;
+    --cor-rodape: #1a5c38;
+    --cor-titulo-extra: #2fa866;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: white;
+    margin: 0px 20px;
+    border-radius: 7px;
+    box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.178);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor-cabecalho2), var(--cor-cabecalho1));
+    color:white;
+}
+
+header > p {
+    font-family: "Overpass";
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    margin: 20px;
+    height: 100%;
+}
+
+nav {
+    margin: 0px 15px;
+    padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #bbfad7;
+}
+
+li.botao:hover {
+    background-color: #2fa866;
+    color: var(--cor-cabecalho2);
+    transition: all 0.5s ease-in;
+    
+    border: #2fa866;
+    border: 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 0px 12px;
+}
+
+p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 40px;
+    margin:0px 20px;
+    padding: 10px;
+}
+
+a.link {
+    color: #016129;
+    background-color: #52f79ca1; 
+    text-decoration: none;
+
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+
+a.link::after {
+    content: " 🔗";
+}
+
+h1 {
+    font-family: DCC;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+h2 {
+    font-family: "Geo";
+    font-weight: bold;
+    font-size: 2.2em;
+    height: 40px;
+    color: #0d532c;
+    margin: 0px 20px;
+    padding: 20px 0px;
+}
+
+h3 {
+    font-family: "Geo";
+    font-weight: normal;
+    font-size: 1.8em;
+    margin: 30px 20px;
+
+    color: var(--cor-h2);
+
+    background-image: linear-gradient(to right, rgba(72, 253, 154, 0.533)60%, white);
+}
+
+h3.extra {
+    color: white;
+    background-color: #0c381f;
+    background-image: none;
+    border-radius: 7px;
+}
+
+article.extra {
+    background-color: #2fa86596;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1.5px 2px 5px 2px rgba(0, 0, 0, 0.178);
+}
+
+img {
+    display: flex;
+    margin: auto;
+    padding: 45px;
+}
+
+iframe {
+    display: flex;
+    margin:auto;
+    border: 30px solid #094b26;
+}
+
+ul.extra {
+    display: inline-block;
+    margin: 20px 40px 20px 250px;
+}
+
+ul.extra li{
+    list-style: none;
+    color: black;
+}
+
+ul.extra li::before {
+    content: "✔️";
+}
+
+footer {
+    margin:20px 0px 0px 0px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background-color:var(--cor-rodape);
+    padding: 10px;
+}
