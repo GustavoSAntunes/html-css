@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center top;
-            background-size: contain;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /*  Shorthand - background
+                color > image > position > / > size > repeat > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;
         }
 
         main {
@@ -20,13 +27,17 @@
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+            max-width: 400px;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste veniam aperiam, facere repudiandae eaque? Fuga architecto nesciunt assumenda nisi ex magni quisquam voluptas dolores vitae, repudiandae fugiat officiis ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum repudiandae tenetur nobis accusantium dolor nisi similique eaque deserunt dolorem natus sequi culpa quod earum, eveniet temporibus necessitatibus sint tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur maiores sequi qui vel voluptatum est odit ut temporibus laudantium possimus iste, voluptas quo repellat, perspiciatis quas unde ad autem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste veniam aperiam, facere repudiandae eaque? Fuga architecto nesciunt assumenda nisi ex magni quisquam voluptas dolores vitae, repudiandae fugiat officiis ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum repudiandae tenetur nobis accusantium dolor nisi similique eaque deserunt dolorem natus sequi culpa quod earum, eveniet temporibus necessitatibus sint tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur maiores sequi qui vel voluptatum est odit ut temporibus laudantium possimus iste, voluptas quo repellat, perspiciatis quas unde ad autem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste veniam aperiam, facere repudiandae eaque? Fuga architecto nesciunt assumenda nisi ex magni quisquam voluptas dolores vitae, repudiandae fugiat officiis ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum repudiandae tenetur nobis accusantium dolor nisi similique eaque deserunt dolorem natus sequi culpa quod earum, eveniet temporibus necessitatibus sint tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur maiores sequi qui vel voluptatum est odit ut temporibus laudantium possimus iste, voluptas quo repellat, perspiciatis quas unde ad autem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste veniam aperiam, facere repudiandae eaque? Fuga architecto nesciunt assumenda nisi ex magni quisquam voluptas dolores vitae, repudiandae fugiat officiis ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum repudiandae tenetur nobis accusantium dolor nisi similique eaque deserunt dolorem natus sequi culpa quod earum, eveniet temporibus necessitatibus sint tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur maiores sequi qui vel voluptatum est odit ut temporibus laudantium possimus iste, voluptas quo repellat, perspiciatis quas unde ad autem.
+        </p>
     </main>
 </body>
 </html>
