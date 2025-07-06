@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#celular { 
+	display: flex; /* Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo */
+	justify-content: center; /* Alinhamento horizontal, ou seja, dispensa margin: auto; */
+	align-items: center; /* Alinhamento vertical */
+}
+
+img#celular {
+    max-width: 70%;
+    min-width: 10%;
+}
+
+iframe {
+    max-width: 70%;
+    min-width: 10%;
+}
+
+ul {
+    list-style-type: none;
+    width: 400px;
+    display: block;
+    margin-left: 100vh;   
+}
+
+.social > li{
+    padding-top: 5px;
+}
+
+.social > li > a > img{
+    max-width: 60px;
+    border-radius: 100px;
+}
