@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1000px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--cor2) 75%, var(--cor1));
+    }
+    .container {
+        flex-direction: row;
+    }
+}
